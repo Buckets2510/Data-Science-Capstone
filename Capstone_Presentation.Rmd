@@ -1,0 +1,44 @@
+---
+title: "Coursera Data Science Capstone - Word Prediction App"
+author: "Brandon Robinson"
+date: "`r Sys.Date()`"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Project
+
+The presentation will provide a brief pitch of the Word Prediction application developed for the project: 
+[Word Prediction App](https://buckets265.shinyapps.io/Word_Predictor/).
+
+This is the final project for the Coursera Data Science Specialization, using the provided Corpora that has accumulated data from blogs, news, and Twitter. 
+
+
+## Summary of Analysis
+
+The Corpora was downloaded, cleaned, and tokenized into n-grams, (4-gram to unigram) to be mapped by how frequently they occur. The frequency of the words can be viewed in the Milestone Report prepared for the project, [Milestone Report](https://rpubs.com/Buckets2510/1212615).
+
+The data is split into matrices for the n-grams and become the basis for the word prediction application. When a word is input into the application, the most likely word is returned.
+
+## App Overview
+
+As the user enters text, the output is updated to display the predicted phrase
+
+```{r, echo=FALSE}
+knitr::include_graphics('./app_screenshot.png')
+```
+
+## Highlights
+
+The model performs decently well, but is limited when multiple words are entered. Also, there is some profranity included in the model which potentially limits the next predicted words in the matrices.
+
+Useful Links:
+
+1. [Milestone Report](https://rpubs.com/Buckets2510/1212615)
+2. [Capstone Dataset](https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip)
+3. [Github Repository](https://github.com/Buckets2510/Data-Science-Capstone.git)
+
+
